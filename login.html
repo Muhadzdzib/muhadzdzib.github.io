@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="img/sharinggan.png" >
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="card-login"> 
+            <div class="penjelasan">
+                <div class="header"> 
+                    <div class="kumpulan-mata">
+                        <div class="mata-1"></div>
+                        <div class="mata-2"></div>
+                        <div class="mata-3"></div>
+                    </div>
+            </div>
+                <div class="title-1">Pemrograman Web</div>
+                <div class="title-2">Tugas uts</div>
+                <div class="garis-horizontal"></div>
+             
+            </div>
+            <div class="garis-vertical">
+                <div class="header-3"></div>
+            </div>
+             
+            <div class="login-wrapper">
+                <div class="header-1"></div>
+                <div class="title-3">Login</div>
+
+                <div><input type="text" class="form_username "id="username" placeholder="USERNAME" autocomplete="off"></div> 
+                <div class="error_msg-1">Username tidak boleh kosong</div>
+                <div class="error_msg-3">Username tidak boleh kosong</div>
+
+                <div><input type="password" class ="form_password" id="password" placeholder="PASSWORD" ></div>
+                <div class="error_msg-2">Password tidak boleh kosong</div>
+                <div class="error_msg-4">Password tidak boleh kosong</div>
+
+                <div class="btn-login"><input type="button" class="btn" value="Login" onClick="login()"></div>
+                <div class="error_msg">Username atau Password anda salah</div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+<script language="JavaScript">
+
+    function login() {
+        var user = document.getElementById("username").value;
+        var pass = document.getElementById("password").value;
+        var form_username = document.querySelector(".form_username");
+        var form_password = document.querySelector(".form_password");
+        var user_kosong = document.querySelector(".error_msg-1");
+        var pass_kosong = document.querySelector(".error_msg-2");
+        var userdanpass_kosong = document.querySelector(".error_msg-3");
+        var passdanuser = document.querySelector(".error_msg-4");
+        var error_msg = document.querySelector(".error_msg");
+
+        if (user == "muhadzdzib" && pass == "galang") {
+            window.location.href="dashboard.html";
+            alert("Selamat Datang "+user);
+        } 
+
+        else if (user == "" && pass!=""){
+            
+            user_kosong.style.display = "inline-block";
+            pass_kosong.style.display = "none";
+            userdanpass_kosong.style.display = "none";
+            passdanuser.style.display = "none";
+            error_msg.style.display = "none";
+            form_username.style.border = "1px solid #f74040";
+            form_password.style.border = "1px solid #fff";
+
+        }
+
+        else if (user != "" && pass==""){
+            
+            user_kosong.style.display = "none";
+            pass_kosong.style.display = "inline-block";
+            userdanpass_kosong.style.display = "none";
+            passdanuser.style.display = "none";
+            error_msg.style.display = "none";
+            form_username.style.border = "1px solid #fff";
+            form_password.style.border = "1px solid #f74040";
+
+        }
+
+        else if (user == "" && pass==""){
+            form_username.style.border = "1px solid #f74040";
+            form_password.style.border = "1px solid #f74040";
+            userdanpass_kosong.style.display = "inline-block";
+            passdanuser.style.display = "inline-block";
+            user_kosong.style.display ="none";
+            pass_kosong.style.display ="none";
+            error_msg.style.display = "none";
+
+        }
+
+        else {
+            user_kosong.style.display = "none";
+            pass_kosong.style.display = "none";
+            form_username.style.border = "1px solid #f74040";
+            form_password.style.border = "1px solid #f74040";
+            error_msg.style.display = "inline-block";
+            return false;
+        }
+        
+    }
+  
+    
+
+</script>
+
+</html>

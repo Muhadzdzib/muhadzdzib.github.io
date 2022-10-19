@@ -1,0 +1,216 @@
+*{
+    font-family: monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-1{
+    background-image: url(../img/background.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card-deskripsi {
+    width: 700px;
+    height: 400px;
+    position: relative;
+    left: 15%;
+    top: 30%;
+}
+
+.title {
+    font-style: italic;
+    font-weight: bold;
+    cursor: default;
+    color: #C47AFF;
+    width: 400px;
+    font-size: 60pt;
+}
+.title-1{
+    font-style: italic;
+    font-weight: bold;
+    cursor: default;
+    color: #C47AFF;
+    font-size: 60pt;
+    width: 665px;
+}
+.deskripsi{
+    cursor: default;
+    color: #EDE4E0 ;
+    position: relative;
+    top: 20px;
+    width: 660px;
+    font-size: 20pt;
+    text-align:justify;
+}
+
+.title:hover,.title-1:hover{
+    color: wheat;
+    transition: all 0.8s ease-in-out;
+}
+
+    .deskripsi:hover{
+        color: #C47AFF;
+        transition: all 0.8s ease-in-out;}
+    
+
+
+.container-2{
+    background-image: url(../img/Sasuke.gif);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-contact{
+    border-radius: 10px;
+    width: 1000px;
+    height: 440px;
+    background-color: #3e3e3e;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+}
+
+.card-contact-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #C47AFF;
+}
+
+.contact-title,.contact-title-2{
+    font-size: 40pt;
+    width: 210px;
+    position: relative;
+    left: 280px;
+    top: 20px;
+    color: #B2B2B2;
+}
+.contact-title-2{
+    position: relative;
+    left: 429px;
+    width: 60px;
+}
+
+.icon-contact{
+    position: relative;
+    top: 220px;
+    width: 450px;
+    height: 50px;
+}
+
+.icon-contact a{
+    padding-left: 20px;
+    color: #C47AFF;
+}
+
+
+
+.garis{
+    position: relative;
+    top: 13px;
+    left: 427px;
+    border-radius: 20px;
+    background-color: #C47AFF;
+    width: 60px;
+    height: 7px;
+}
+
+.garis-vertical{
+    border-radius: 10px;
+    height: 390px;
+    width: 10px;
+    background-color: #4d4d4f;
+    position: relative;
+    left: 50%;
+    top: -180px;
+}
+
+.card-form{
+    width: 400px;
+    height: 380px;
+    position: relative;
+    float: right;
+    top: -560px;
+    right: 50px;
+}
+
+.title-form{
+    font-size: 20pt;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    background-color: rebeccapurple;
+
+}
+
+.form_username,.form_pesan{
+    background-color: #4d4d4f;
+    position: relative;
+    left: 0px;
+    top: 20px;
+    width: 370px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15pt;
+    font-weight: bold;
+    border-bottom: 2px solid #C47AFF;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+.form_pesan{
+    height: 80px;
+}
+
+.btn-login{
+    position: relative;
+    float: right;
+    right: 25px;
+}
+
+.btn{
+    border-color: #C47AFF;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 175px;
+    height: 30px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+.msg,.eror,.nama,.email{
+    display: none;
+    color: rgba(255, 17, 0, 0.884);
+}
+
+.msg{
+    font-size: 16pt;
+}
+
+.kumpulan-mata{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+.mata-1,.mata-2,.mata-3{
+    background-image:url(../img/rinnegan.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.mata-2{background-image: url(../img/sharinggan.png);}
+.mata-3{background-image: url(../img/byakugan.png);}

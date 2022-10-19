@@ -1,0 +1,174 @@
+body{
+    background-color:black;
+    font-family: monospace;
+}
+
+.container-1{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.card-login{
+    display: flex;
+    height: 500px;
+    width: 810px;
+    border-radius: 20px;
+    background-image: url(../img/madara.gif);
+    background-size: cover;
+}
+
+.header,.header-1,.header-3{
+    background-color: #C47AFF;
+    width: 100%;
+    height: 50px;
+    border-top-left-radius: 20px;
+}
+.header-1{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0px;
+}
+.header-3{
+    width: 60px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.kumpulan-mata{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+}
+.mata-1,.mata-2,.mata-3{
+    background-image:url(../img/rinnegan.png);
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.mata-2{background-image: url(../img/sharinggan.png);}
+.mata-3{background-image: url(../img/byakugan.png);}
+
+.penjelasan{
+    border-top-left-radius:20px ;
+    width: 400px;
+    height: 350px;
+}
+
+.title-1,.title-2,.title-3{
+    cursor:default;
+    font-size: 35pt;
+    font-style: italic;
+    font-weight: bold;
+    width: 400px;
+    padding-top: 15px;
+    padding-left: 10px;
+    color: #C47AFF;
+}
+
+.title-2{
+    float: right;
+    position: relative;
+    top: -20px;
+    right: 6px;
+    font-size: 30pt;
+    width: 200px;
+}
+
+.title-3{
+    font-size: 35pt;
+    position: relative;
+    left: 25%;
+}
+
+.title-1:hover,.title-2:hover,.title-3:hover{
+    color: wheat;
+    transition: all 0.5s ease-in-out;
+}
+
+.garis-horizontal{
+    width: 200px;
+    height: 8px;
+    border-radius: 20px;
+    float: right;
+    position: relative;
+    top: -15px;
+    right: 6px;
+    background-color: #C47AFF;
+}
+
+.garis-horizontal:hover{
+    background-color: wheat;
+    transition: all 0.5s ease-in-out;
+}
+
+.garis-vertical{
+    border-radius: 10px;
+    height: 500px;
+    width: 10px;
+    background-color: #4d4d4f;
+    position: relative;
+}
+
+.login-wrapper{
+    border-top-right-radius:20px ;
+    width: 400px;
+    height:350px;
+}
+
+.form_username,.form_password{
+    background-color: #4d4d4f;
+    position: relative;
+    left: 65px;
+    top: 20px;
+    width: 270px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15pt;
+    font-weight: bold;
+    border-bottom: 2px solid #C47AFF;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+}
+
+.btn-login{
+    position: relative;
+    float: right;
+    right: 60px;
+}
+
+.btn{
+    border-color:#C47AFF;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    width: 175px;
+    height: 25px;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .error_msg,.error_msg-1,.error_msg-2,.error_msg-1-1,.error_msg-3,.error_msg-4{
+    font-family: monospace;
+    font-size: 15pt;
+    position: relative;
+    top: 10px;
+    left: 55px;
+    display: none;
+    color: red;
+  }
+  .error_msg{
+    position: relative;
+    top: 10px;
+    left: 18px;
+  }
+
+  

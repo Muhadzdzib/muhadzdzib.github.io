@@ -1,0 +1,167 @@
+* {
+    font-family: monospace;
+}
+
+
+
+.container-1{
+    width: 100vw ;
+    height: 100vh ;
+    background-color: black;
+    display: flex;
+}
+
+
+.card-1,.card-2{
+    border-radius: 20px;
+    width: 60%;
+    height: 750px;
+    position: relative;
+    background-image: url("../img/astronomi.gif");
+    background-size: cover;
+    left: 100px;
+    top: 130px;
+}
+
+.card-2{
+    position: relative;
+    left: 120px;
+    width : 30%;
+    background-color: #7978FF;
+}
+
+.salam{
+    font-size: 37pt;
+    color: #C47AFF;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 380px;
+    height: 50px;
+    font-style: italic;
+    font-weight: 700;
+    cursor: default;
+}
+
+.salam:hover{
+    color: wheat;
+    transition: all 0.8s ease-in-out;
+}
+
+.card-informasi{
+    background-color: black;
+    color: wheat;
+    height: 200px;
+    width: 94.5%;
+    border-radius: 20px;
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
+
+.deskripsi{
+    color: wheat;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card-hobby,.card-cita{
+    position: relative;
+    left: 30px;
+    top: 15px;
+    border-radius: 20px;
+    width: 45%;
+    height: 390px;
+    background-color: black;
+}
+.card-cita{
+    top :-410px;
+    left: 52%;
+}
+
+.title,.title1,.title-bio{
+    font-size: 25pt;
+    color: #C47AFF;
+    padding-top: 20px;
+    padding-left: 30px;
+    cursor:default;
+}
+.title1{
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+}
+.title-bio{
+    position: relative;
+    top: -35px;
+    
+}
+
+.title:hover,.title1:hover,.title-bio:hover{
+    color: wheat;
+    transition: all 0.8s ease-in-out;
+    
+}
+
+.subtitle{
+    font-size: 15pt;
+    position: relative;
+    top: -40px;
+    left: 5.5%;
+    color: wheat;
+}
+
+.gambar-hobby,.gambar-cita{
+    position: relative;
+    left: 30px;
+    width:430px; 
+    height: 250px;
+    border-radius: 20px;
+}
+.image-profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    position: relative;
+    left: 35%;
+    top: -20px;
+}
+
+.nama{
+    font-size: 15pt;
+    position: relative;
+    left: 39%;
+    top: -30px;
+    color: wheat;
+}
+
+.btn-biodata{
+    font-size: 15pt;
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-top: 2.5px;
+    background-color: #C47AFF;
+    position:relative;
+    float: right;
+    top: 70px;
+    right: 10px;
+}
+
+.btn-biodata:hover{
+    background-color:#232323;
+    transition: all 0.8s ease-in-out;
+}
+
+.btn-biodata  a {
+    color: wheat;
+    font-size: 20pt;
+    text-decoration: none;
+}
+
+.btn-biodata a:hover{
+    color: #EB1D36;
+    transition: all 0.5s ease-in-out;
+}   

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="img/sharinggan.png" >
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+<body>
+    <div class="container-1">
+        <nav role="navigation">
+            <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="dashboard.html"><li>Dashboard</li></a>
+                <a href="home.html"><li>Home</li></a>
+                <a href="biodata.html"><li>Biodata</li></a>
+                <a href="home.html"><li>Contact</li></a>
+                <a href="login.html"><li>Logout</li></a>
+            </ul>
+            </div>
+        </nav>
+
+        <div class="card-1">
+            <div class="salam">
+                Hai,Muhadzdzib 
+            </div>
+
+            <div class="card-informasi">
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam sequi vitae rem 
+                    deserunt harum expedita laboriosam vero? Dolore corporis iure tenetur asperiores ut vel ipsum et quia totam 
+                    accusamus illum eos tempora nemo aperiam, deleniti ratione voluptas consectetur. At, placeat non. Voluptates, 
+                    dolores voluptas nemo quas aliquid molestias quos accusamus suscipit quam, tenetur a incidunt eveniet minus, 
+                    quo error ex perferendis saepe magni doloremque fuga quisquam repellat pariatur. Beatae reiciendis ea unde 
+                    voluptas praesentium, aperiam suscipit facere quibusdam numquam, distinctio quis. Modi fugit, omnis, natus acilis 
+                    dolore quidem quibusdam expedita pariatur excepturi delectus beatae qui, ipsam officiis labore doloribus?</p>
+            </div>
+
+            <div class="card-hobby">
+                <p class="title">Hobby</p>  
+                <div class="w3-content w3-display-container">
+                    <img class="gambar-hobby"src="img/Gaming.jpg" >
+                    <img class="gambar-hobby" src="img/catur.jpg" >
+                    <img class="gambar-hobby" src="img/badminton.jpg" >
+                  </div>  
+            </div>
+
+            <div class="card-cita">
+                <p class="title">Cita-cita</p>  
+                <div class="w3-content w3-display-container">
+                    <img class="gambar-cita" src="img/bisnis1.jfif" >
+                    <img class="gambar-cita" src="img/bisnis2.png" >
+                    <img class="gambar-cita" src="img/bisnis3.jpg" >
+                  </div>  
+            </div>
+        </div>
+
+        <div class="card-2">
+            <div class="profile">
+                <p class="title1">My Profile</p>
+                <img src="img/galang.jpeg" alt="" class="image-profile">
+                <p class="nama">Galang Hardy M</p>
+                <div class="title-bio">Kelas  </div>
+                <div class="subtitle">Tekom A  </div>
+                <div class="title-bio">Nim  </div>
+                <div class="subtitle">210210501024  </div>
+                <div class="btn-biodata"><a href="biodata.html">My,Biography</a></div>
+       
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("gambar-hobby");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 2500); // Change image every 2 seconds
+    }
+
+
+    var slideIndex = 0;
+    carouse2();
+
+    function carouse2() {
+    var i;
+    var x = document.getElementsByClassName("gambar-cita");
+
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carouse2, 2500); // Change image every 2 seconds
+    }
+ 
+             
+
+    
+</script>
+
+</html>
